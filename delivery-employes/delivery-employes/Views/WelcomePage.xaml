@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="delivery_employes.Views.WelcomePage"
+             xmlns:vm="clr-namespace:delivery_employes.ViewModels"
+             Title="{Binding Title}">
+    
+    <ContentPage.BindingContext>
+        <vm:WelcomeViewModel />
+    </ContentPage.BindingContext>
+    
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#f3a683</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <StackLayout BackgroundColor="{StaticResource Accent}"
+                     VerticalOptions="FillAndExpand"
+                     HorizontalOptions="Fill">
+            <StackLayout Orientation="Vertical"
+                         Padding="0,15,0,10"
+                         Spacing="10">
+                <Label Text="Delivery Maria'S"
+                       FontSize="Title"
+                       FontAttributes="Bold,Italic"
+                       TextColor="#d63031"
+                       HorizontalOptions="CenterAndExpand" />
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal"
+                         HorizontalOptions="Center"
+                         VerticalOptions="Center">
+                <ContentView Padding="0,5,0,15"
+                             VerticalOptions="FillAndExpand">
+                    <Image Source="deliveryWelcome.png"
+                           VerticalOptions="Center"
+                           HeightRequest="200" />
+                </ContentView>
+            </StackLayout>
+
+            <StackLayout Orientation="Vertical"
+                         Padding="30,5,30,10"
+                         Spacing="10">
+                <Label Text="Somos una empresa que brinda un servicio a la sociedad facilitándole tiempo y dinero brindándole el servicio de delivery a domicilio siendo como objetivo en brindar un buen servicio basándonos en la puntualidad y respeto apoyandonos en la excelencia de nuestro capital humano. Dando a nuestros clientes el mejor servicio de delívery de bebidas y Snacks en la ciudad de Huancayo, con una variedad de productos de buena calidad; con un tiempo rápido de entrega."
+                       FontSize="14"
+                       Padding="0,0,0,0"
+                       FontAttributes="Bold"
+                       TextColor="#333"
+                       HorizontalTextAlignment="Center"
+                       CharacterSpacing=".3" />
+            </StackLayout>
+        </StackLayout>
+    </Grid>
+
+</ContentPage>

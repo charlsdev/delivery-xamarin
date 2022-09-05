@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:delivery_employes.ViewModels"
+             x:DataType="viewmodels:InfoViewModel"
+             x:Class="delivery_employes.Views.InfoPage"
+             Title="Información">
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Accent">#f3a683</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ScrollView>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <StackLayout BackgroundColor="{StaticResource Accent}"
+                         VerticalOptions="FillAndExpand"
+                         HorizontalOptions="Fill">
+                <StackLayout Orientation="Vertical"
+                             Padding="0,25,0,0"
+                             Spacing="10">
+                    <Label Text="Misión"
+                           FontSize="Title"
+                           FontAttributes="Bold,Italic"
+                           TextColor="#d63031"
+                           Margin="50,0"
+                           HorizontalOptions="StartAndExpand" />
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical"
+                             Padding="30,0,5,10"
+                             Spacing="10">
+                    <Label Text="Somos una empresa que brinda un servicio a la sociedad facilitándole tiempo y dinero brindándole el servicio de delivery a domicilio siendo como objetivo en brindar un buen servicio basándonos en la puntualidad y respeto apoyandonos en la excelencia de nuestro capital humano. Dando a nuestros clientes el mejor servicio de delívery de bebidas y Snacks en la ciudad de Huancayo, con una variedad de productos de buena calidad; con un tiempo rápido de entrega."
+                           FontSize="14"
+                           Padding="0,0,0,0"
+                           FontAttributes="Bold"
+                           TextColor="#333"
+                           HorizontalTextAlignment="Start"
+                           CharacterSpacing=".3" />
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical"
+                             Padding="0,5,0,0"
+                             Spacing="10">
+                    <Label Text="Misión"
+                           FontSize="Title"
+                           FontAttributes="Bold,Italic"
+                           TextColor="#d63031"
+                           Margin="50,0"
+                           HorizontalOptions="StartAndExpand" />
+                </StackLayout>
+
+                <StackLayout Orientation="Vertical"
+                             Padding="30,0,30,10"
+                             Spacing="10">
+                    <Label Text="Somos una empresa que brinda un servicio a la sociedad facilitándole tiempo y dinero brindándole el servicio de delivery a domicilio siendo como objetivo en brindar un buen servicio basándonos en la puntualidad y respeto apoyandonos en la excelencia de nuestro capital humano. Dando a nuestros clientes el mejor servicio de delívery de bebidas y Snacks en la ciudad de Huancayo, con una variedad de productos de buena calidad; con un tiempo rápido de entrega."
+                           FontSize="14"
+                           Padding="0,0,0,0"
+                           FontAttributes="Bold"
+                           TextColor="#333"
+                           HorizontalTextAlignment="Start"
+                           CharacterSpacing=".3" />
+                </StackLayout>
+
+                <StackLayout Padding="10,0,10,0"
+                             Margin="0,0,0,20"
+                             VerticalOptions="Center">
+                    <Button VerticalOptions="Center"
+                            Text="Inicio"
+                            BackgroundColor="#6c5ce7"
+                            FontAttributes="Bold,Italic"
+                            HorizontalOptions="CenterAndExpand"
+                            Command="{Binding LoginCommand}" />
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </ScrollView>
+
+    <!--<ContentPage.Content>
+        
+        <StackLayout Padding="10,0,10,0" VerticalOptions="Center">
+            <Button VerticalOptions="Center" Text="Login" Command="{Binding LoginCommand}"/>
+        </StackLayout>
+    </ContentPage.Content>-->
+</ContentPage>

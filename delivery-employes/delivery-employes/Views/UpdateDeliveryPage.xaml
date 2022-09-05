@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewmodels="clr-namespace:delivery_employes.ViewModels"
+             x:DataType="viewmodels:ItemUpdateViewModel"
+             x:Class="delivery_employes.Views.UpdateDeliveryPage"
+             Title="Actualizar Pedido">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout Padding="15">
+                <Label Text="Cédula"
+                       FontSize="12"
+                       FontAttributes="Bold"
+                       TextTransform="Uppercase" />
+                <Entry Text="{Binding Cedula}"
+                       FontSize="12"
+                       Keyboard="Numeric"
+                       MaxLength="10" />
+
+                <Label Text="Nombres Completos"
+                       FontSize="12"
+                       FontAttributes="Bold"
+                       TextTransform="Uppercase" />
+                <Entry Text="{Binding NameCompleto}"
+                       Keyboard="Text"
+                       FontSize="12" />
+
+                <Label Text="Dirección"
+                       FontSize="12"
+                       FontAttributes="Bold"
+                       TextTransform="Uppercase" />
+                <Entry Text="{Binding Direccion}"
+                       Keyboard="Text"
+                       FontSize="12" />
+
+                <Label Text="Estado"
+                       FontSize="12"
+                       FontAttributes="Bold"
+                       TextTransform="Uppercase" />
+                <Picker Title="Seleccionar..."
+                        FontSize="12"
+                        SelectedItem="{Binding Estado}">
+                    <Picker.Items>
+                        <x:String>Pendiente</x:String>
+                        <x:String>Finalizado</x:String>
+                    </Picker.Items>
+                </Picker>
+
+                <Label Text="Producto"
+                       FontSize="12"
+                       FontAttributes="Bold"
+                       TextTransform="Uppercase" />
+                <Entry Text="{Binding Producto}"
+                       Keyboard="Text"
+                       FontSize="12" />
+
+                <Label Text="Precio"
+                       FontSize="12"
+                       FontAttributes="Bold"
+                       TextTransform="Uppercase" />
+                <Entry Text="{Binding Precio}"
+                       FontSize="12"
+                       Keyboard="Numeric"
+                       MaxLength="5" />
+
+                <Label Text="Cantidad"
+                       FontSize="12"
+                       FontAttributes="Bold"
+                       TextTransform="Uppercase" />
+                <Entry Text="{Binding Cantidad}"
+                       FontSize="12"
+                       Keyboard="Numeric"
+                       MaxLength="3" />
+
+                <StackLayout Orientation="Horizontal">
+                    <Button Text="Cancelar"
+                            Command="{Binding CancelCommand}"
+                            CornerRadius="10"
+                            HorizontalOptions="FillAndExpand"></Button>
+                    <Button Text="Guardar"
+                            Command="{Binding UpdateCommand}"
+                            CornerRadius="10"
+                            HorizontalOptions="FillAndExpand"></Button>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+    
+</ContentPage>

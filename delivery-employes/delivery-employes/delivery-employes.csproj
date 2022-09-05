@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="Xamarin.Forms" Version="5.0.0.2196" />  
+    <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\InfoPage.xaml.cs">
+      <DependentUpon>InfoPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\AllDeliveryPage.xaml.cs">
+      <DependentUpon>AllDeliveryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\UpdateDeliveryPage.xaml.cs">
+      <DependentUpon>UpdateDeliveryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\NewDeliveryPage.xaml.cs">
+      <DependentUpon>NewDeliveryPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\WelcomePage.xaml.cs">
+      <DependentUpon>WelcomePage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>

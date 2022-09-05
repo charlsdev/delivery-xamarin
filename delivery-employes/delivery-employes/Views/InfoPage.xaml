@@ -46,7 +46,7 @@
                 <StackLayout Orientation="Vertical"
                              Padding="0,5,0,0"
                              Spacing="10">
-                    <Label Text="Misión"
+                    <Label Text="Visión"
                            FontSize="Title"
                            FontAttributes="Bold,Italic"
                            TextColor="#d63031"
@@ -57,7 +57,7 @@
                 <StackLayout Orientation="Vertical"
                              Padding="30,0,30,10"
                              Spacing="10">
-                    <Label Text="Somos una empresa que brinda un servicio a la sociedad facilitándole tiempo y dinero brindándole el servicio de delivery a domicilio siendo como objetivo en brindar un buen servicio basándonos en la puntualidad y respeto apoyandonos en la excelencia de nuestro capital humano. Dando a nuestros clientes el mejor servicio de delívery de bebidas y Snacks en la ciudad de Huancayo, con una variedad de productos de buena calidad; con un tiempo rápido de entrega."
+                    <Label Text="Asi mismo tenemos la firme convicción de ser una empresa reconocida a nivel regional de servicios de delívery comprometidos en satisfacer oportunamente sus necesidades de una manera eficiente a nuestros clientes y ser una empresa en la que el profesionalismo se vea reflejado en nuestro servicio. Consolidarnos como la mejor empresa en delívery de bebidas, comida y medicamentos  en la ciudad de Huancayo, con una gama de diversos productos y un alto grado de satisfacción de nuestros clientes. Contar con un lugar estratégico de distribución de nuestros productos."
                            FontSize="14"
                            Padding="0,0,0,0"
                            FontAttributes="Bold"

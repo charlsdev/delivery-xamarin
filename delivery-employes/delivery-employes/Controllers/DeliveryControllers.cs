@@ -11,7 +11,8 @@ namespace delivery_employes.Controllers
 {
     public class DeliveryControllers
     {
-        string urlAPI = "http://192.168.100.86:4000/api";
+        //string urlAPI = "http://192.168.100.86:4000/api";
+        string urlAPI = "https://api-delivery-xamarin.onrender.com/api";
 
         public async Task<bool> SavePedido(
             string ced, string nameCom, string direc, string esta, 
